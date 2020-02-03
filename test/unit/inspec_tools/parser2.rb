@@ -11,6 +11,6 @@ class P < Parslet::Parser
   rule(:elements) { (call | element).repeat(2) }
   rule(:element) { str('bar') }
   rule(:call) { str('baz') >> str('()') }
-
+doc
   P.new.parse_with_debug('bazbar')
 end

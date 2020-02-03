@@ -75,6 +75,8 @@ module InspecTools
     def parse_controls
       controls = []
       @transformed_data.each do |contr|
+        # TODO: this should likely use the utils/extract_nist_cis_mapping code
+        # TODO: or something from the @full_excel object below?
         nist = find_nist(contr[:cis]) unless contr[:cis] == 'No CIS Control'
         control = {}
         control['id'] = 'M-' + contr[:title].split(' ')[0]
