@@ -2,7 +2,7 @@
 
 ![Overall Status](https://github.com/mitre/inspec_tools/workflows/inspec_tools/badge.svg)
 ![Inspec Tools Release](https://github.com/mitre/inspec_tools/workflows/Release%20Management/badge.svg)
-
+ 
 InspecTools supplies several CLI tools to convert to and from InSpec format.
 
 The inspec_tools support the following modules:
